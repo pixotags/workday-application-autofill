@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { width: 280px; margin: 0; padding: 14px; font: 13px system-ui, sans-serif; color: #1f2933; }
+  h1 { font-size: 15px; margin: 0 0 4px; color: #1A4C49; }
+  .meta { color: #616e7c; margin-bottom: 12px; line-height: 1.4; }
+  .meta b { color: #1f2933; font-weight: 600; }
+  button { display: block; width: 100%; padding: 9px 10px; margin: 0 0 8px; border-radius: 6px;
+           border: 1px solid #cbd2d9; background: #fff; font: inherit; cursor: pointer; text-align: left; }
+  button:hover { background: #f5f7fa; }
+  button.primary { background: #1A4C49; border-color: #1A4C49; color: #fff; font-weight: 600; text-align: center; }
+  button.primary:hover { background: #14403d; }
+  button small { display: block; color: #7b8794; font-size: 11px; margin-top: 2px; }
+  #status { min-height: 18px; margin-top: 4px; font-size: 12px; white-space: pre-wrap; }
+  .ok { color: #1e7d32; } .err { color: #b3261e; }
+  a { color: #1A4C49; }
+</style>
+</head>
+<body>
+  <h1>Workday Application Autofill</h1>
+  <div class="meta">Page: <b id="page">…</b><br>Profile: <b id="profile">…</b></div>
+
+  <button id="fill" class="primary">Fill this page</button>
+  <button id="capture">Capture this page<small>Save what's filled in now to your profile</small></button>
+  <button id="template">Copy this page as JSON<small>Every field and its current value — doesn't save</small></button>
+  <button id="options">Edit / load / export profile</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

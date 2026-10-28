@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.zip
+
+# Your real profile must never be committed — keep it outside the repo
+# or name it profile*.json / my-*.json.
+profile*.json
+my-*.json
+!examples/*.json
+
+.DS_Store

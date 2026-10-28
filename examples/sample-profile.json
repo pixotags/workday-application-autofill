@@ -1,0 +1,71 @@
+{
+  "_readme": "Placeholder data. Load this from the extension's options page, replace the values with your own, and use 'Capture this page' on any page you fill by hand to add it here automatically.",
+
+  "pages": {
+    "applyFlowMyInfoPage": {
+      "fields": {
+        "source": "Job Board > Seek",
+        "candidateIsPreviousWorker": "No",
+        "country": "Australia",
+        "legalName--firstName": "Jane",
+        "legalName--lastName": "Citizen",
+        "preferredCheck": false,
+        "addressLine1": "12 Example Street",
+        "city": "Parramatta",
+        "countryRegion": "New South Wales",
+        "postalCode": "2150",
+        "phoneType": "Mobile",
+        "countryPhoneCode": "Australia (+61)",
+        "phoneNumber": "0400 000 000",
+        "[data-automation-id=\"phone-sms-opt-in\"]": false,
+        "[data-automation-id=\"phone-whatsapp-opt-in\"]": false
+      }
+    },
+
+    "applyFlowMyExpPage": {
+      "sections": {
+        "Professional Experience": [
+          {
+            "Job Title": "Software Engineer",
+            "Company": "Example Pty Ltd",
+            "Location": "Sydney, NSW",
+            "I currently work here": false,
+            "From": "7/2023",
+            "To": "9/2026",
+            "Role Description": "- Built example features\n- Improved an example metric"
+          }
+        ],
+        "Education": [
+          {
+            "School or University": "Example University",
+            "Degree": "Master of Science (M.S)",
+            "Field of Study": "Information Technology"
+          }
+        ],
+        "Languages": [
+          {
+            "Language": "English",
+            "I am fluent in this language.": true,
+            "Comprehension": "5 - Fluent",
+            "Overall": "5 - Fluent",
+            "Reading": "5 - Fluent",
+            "Speaking": "5 - Fluent",
+            "Writing": "5 - Fluent"
+          }
+        ]
+      },
+      "fields": {
+        "linkedInAccount": "https://www.linkedin.com/in/your-profile"
+      }
+    }
+  },
+
+  "common": {},
+
+  "questions": {
+    "right to work in Australia": "I am an Australian citizen",
+    "expected annual base salary": "150000",
+    "how much notice": "4 weeks",
+    "require sponsorship": "No"
+  }
+}

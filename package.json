@@ -1,0 +1,16 @@
+{
+  "name": "workday-application-autofill",
+  "version": "1.5.0",
+  "private": true,
+  "description": "Chrome extension that fills Workday job application pages from a JSON profile stored locally in your browser.",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "check": "node scripts/check.js",
+    "test": "node --test --test-concurrency=1 test/*.test.js",
+    "build": "node scripts/build.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}

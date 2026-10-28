@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Workday Application Autofill",
+  "version": "1.5.0",
+  "description": "Fills Workday job application pages from a JSON profile stored locally in your browser.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://*.myworkdayjobs.com/*", "https://*.myworkday.com/*", "https://*.workday.com/*"],
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "action": {
+    "default_title": "Workday Application Autofill",
+    "default_popup": "popup/popup.html",
+    "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png" }
+  },
+  "options_page": "options/options.html",
+  "background": { "service_worker": "background.js" },
+  "commands": {
+    "fill-page": {
+      "suggested_key": { "default": "Alt+Shift+F" },
+      "description": "Fill the current Workday page"
+    }
+  }
+}

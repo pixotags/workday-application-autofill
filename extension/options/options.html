@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Workday Application Autofill — Profile</title>
+<style>
+  body { max-width: 900px; margin: 24px auto; padding: 0 16px; font: 14px system-ui, sans-serif; color: #1f2933; }
+  h1 { font-size: 20px; color: #1A4C49; margin-bottom: 4px; }
+  p { color: #52606d; margin-top: 0; }
+  textarea { width: 100%; height: 60vh; box-sizing: border-box; font: 12.5px ui-monospace, Menlo, Consolas, monospace;
+             padding: 10px; border: 1px solid #cbd2d9; border-radius: 6px; }
+  .bar { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; align-items: center; }
+  button, label.btn { padding: 8px 14px; border-radius: 6px; border: 1px solid #cbd2d9; background: #fff; font: inherit; cursor: pointer; }
+  button.primary { background: #1A4C49; border-color: #1A4C49; color: #fff; font-weight: 600; }
+  #status { font-size: 13px; } .ok { color: #1e7d32; } .err { color: #b3261e; }
+  code { background: #f0f4f8; padding: 1px 4px; border-radius: 3px; }
+</style>
+</head>
+<body>
+  <h1>Workday Application Autofill — profile</h1>
+  <p>Keys under <code>pages</code> are Workday page ids (shown in the popup). <code>questions</code> match any field whose label contains the text. Keys starting with <code>_</code> are ignored.</p>
+  <div class="bar">
+    <button id="save" class="primary">Save</button>
+    <label class="btn">Load JSON file…<input id="file" type="file" accept=".json,application/json" hidden></label>
+    <button id="export">Export JSON</button>
+    <button id="format">Format</button>
+    <span id="status"></span>
+  </div>
+  <textarea id="json" spellcheck="false"></textarea>
+  <script src="options.js"></script>
+</body>
+</html>
