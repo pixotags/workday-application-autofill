@@ -3,7 +3,7 @@
 Chrome extension that fills Workday job applications from a local JSON profile, including work history, education, dates and dropdowns.
 
 
-[![CI](https://github.com/YOUR-USERNAME/workday-application-autofill/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR-USERNAME/workday-application-autofill/actions/workflows/ci.yml)
+[![CI](https://github.com/pixotags/workday-application-autofill/actions/workflows/ci.yml/badge.svg)](https://github.com/pixotags/workday-application-autofill/actions/workflows/ci.yml)
 ![Manifest V3](https://img.shields.io/badge/Chrome-Manifest%20V3-1A4C49)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
